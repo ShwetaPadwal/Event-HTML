@@ -1,0 +1,19 @@
+<script>
+    var number = [10,21,32,95,65,66]
+    var max= number[0];
+    var max1=number[0];
+    for(var i=0; i<number.length; i++){
+        for(var j=0; j<number.length; j++){
+        if (number[i]> number[j]){
+            var temp=number[i];
+            number[i]=number[j];
+            number[j]=temp;
+        }
+        max=number[i];
+        max1=number[number[i-1]];
+    }
+}
+    console.log(max);
+    console.log(max1);
+    
+</script>
